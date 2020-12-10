@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <h1 id="title">Title</h1>
+        <p id="description">Short Description</p>
+    </section>
+
+    <section class="container">
+        <form action="https://www.freecodecamp.com/form-submit" id="survey-form">
+            <!-- Name -->
+            <section class="name">
+                <article class="label"><label for="name" id="name-label">Full Name</label></article>
+                <article class="input"><input type="text" id="name" placeholder="Full Name"></article>
+            </section>
+
+            <!-- Email -->
+            <section class="email">
+                <article class="label"><label for="email" id="email-label">Email</label></article>
+                <article class="input"><input type="email" id="email" placeholder="email@email.com"></article>
+            </section>
+
+            <!-- Number -->
+            <section class="number">
+                <article class="label"><label for="number" id="number-label">Number</label></article>
+                <article class="input"><input type="number" name="Number" id="number" minlength="11" maxlength="15" placeholder="Number"></article>
+            </section>
+
+            <!-- Dropdown -->
+            <section class="dropdown">
+                <article class="label"><label for="country" class="country">Country</label></article>
+                <article class="input"><select name="dropdown" id="drop-down">
+                    <option value="Country" disabled selected>Select an option</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Nigeria">Nigeria</option>
+                </select></article>
+            </section>
+
+            <!-- Radio -->
+            <section class="radio">
+                <article class="label"><label for="gender" class="gender">Gender</label></article>
+                <article class="input">
+                    <input type="radio" name="gender" id="" value="male">Male <br>
+                    <input type="radio" name="gender" id="" value="female">Female <br>
+                    <input type="radio" name="gender" id="" value="other">Other <br>
+                </article>
+            </section>
+
+            <!-- Checkbox -->
+            <section class="checkbox">
+                <article class="label"><label for="study" class="study">How often do you study</label></article>
+                <article class="input">
+                    <input type="checkbox" name="check" id="check" value="Check">Everyday <br>
+                    <input type="checkbox" name="check" id="check" value="Check">Everyday <br>
+                    <input type="checkbox" name="check" id="check" value="Check">Everyday <br>
+                </article>
+            </section>
+
+            <!-- Textarea -->
+            <section class="textarea">
+                <article class="label"><label for="comments" class="comments">Additional Comments</label></article>
+                <article class="input"><textarea name="textarea" id="text-area" cols="30" rows="10" placeholder="Any additional comments"></textarea></article>
+            </section>
+
+            <!-- Submit -->
+            <section class="submit">
+                <input type="submit" value="Submit" id="submit">
+            </section>
+            
+        </form>
+
+        <footer>
+            <a href="#"><i class="fa"></i></a>
+            <a href="#"><i class="fa"></i></a>
+            <a href="#"><i class="fa"></i></a>
+            <p class="copyright">&copy;2020 Achi Gyuse Achi</p>
+        </footer>
+    </section>
+</body>
+</html>

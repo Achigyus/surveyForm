@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./hacker-working-darkness.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(9, 205, 231, 1);
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(9, 205, 231, 0.616);
+    margin: 20px;
+    border-radius: 20px;
+}
+
+form {
+    min-width: 85%;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+form section{
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    display: inline;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="submit"] {
+    margin: auto;
+    text-align: center;
+    padding: 8px 20px;
+    background-color: white;
+    color: rgba(9, 205, 231, 1);
+    width: 50%;
+    border: none;
+    border-radius: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(9, 205, 231, 1);
+    color: white;
+}
+
+#name, #email, #number, #drop-down, #text-area {
+    min-width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+/* Desktop Styles */
+
+@media screen and (min-width:715px) {
+    
+    .label {
+        text-align: right;
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+    }
+
+    .input {
+        text-align: left;
+        display: inline-block;
+        width: 50%;
+        margin-left: 10px;
+    }
+
+   
+
+    input[type="submit"] {
+        width: 20%;
+    }
+}
